@@ -6,7 +6,7 @@
   <link href="https://www.w3.org/StyleSheets/TR/2021/cg-draft" rel="stylesheet">
   <meta content="Bikeshed version 2e3c4c68b, updated Fri Jan 14 14:49:00 2022 -0800" name="generator">
   <link href="https://wicg.github.io/priority-hints" rel="canonical">
-  <meta content="abcb06675db080a9da0c07215ede1ce32a2f06f7" name="document-revision">
+  <meta content="296d59360d73aff16b9cd1c6917c1a4553631925" name="document-revision">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -577,7 +577,7 @@ c-[il] { color: #000000 } /* Literal.Number.Integer.Long */
   <div class="head">
    <p data-fill-with="logo"><a class="logo" href="https://www.w3.org/"> <img alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72"> </a> </p>
    <h1 class="p-name no-ref" id="title">Priority Hints</h1>
-   <p id="w3c-state"><a href="https://www.w3.org/standards/types#CG-DRAFT">Draft Community Group Report</a>, <time class="dt-updated" datetime="2022-02-23">23 February 2022</time></p>
+   <p id="w3c-state"><a href="https://www.w3.org/standards/types#CG-DRAFT">Draft Community Group Report</a>, <time class="dt-updated" datetime="2022-02-24">24 February 2022</time></p>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -675,7 +675,7 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
   <main>
    <section>
     <p> This specification describes a browser API enabling developers to signal the priority of each resource they need to download.
-      It introduces the <a href="#solution">importance</a> <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#enumerated-attribute" id="ref-for-enumerated-attribute">attribute</a> that may be used with <code class="highlight">HTML</code> elements such as <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#img" id="ref-for-img">img</a></code>, <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#link" id="ref-for-link">link</a></code>, <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#script" id="ref-for-script">script</a></code> and <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#iframe" id="ref-for-iframe">iframe</a></code> and as an <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#enumerated-attribute" id="ref-for-enumerated-attribute①">attribute</a> on the <code class="idl"><a data-link-type="idl" href="https://fetch.spec.whatwg.org/#request" id="ref-for-request">RequestInfo</a></code> of <a href="https://fetch.spec.whatwg.org/#fetch-method">fetch</a>. </p>
+      It introduces the <a href="#solution">importance</a> <a data-link-type="dfn" href="https://html.spec.whatwg.org#enumerated-attribute" id="ref-for-enumerated-attribute">attribute</a> that may be used with <code class="highlight">HTML</code> elements such as <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#img" id="ref-for-img">img</a></code>, <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#link" id="ref-for-link">link</a></code>, <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#script" id="ref-for-script">script</a></code> and <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#iframe" id="ref-for-iframe">iframe</a></code> and as an <a data-link-type="dfn" href="https://html.spec.whatwg.org#enumerated-attribute" id="ref-for-enumerated-attribute①">attribute</a> on the <code class="idl"><a data-link-type="idl" href="https://fetch.spec.whatwg.org/#request" id="ref-for-request">RequestInfo</a></code> of <a href="https://fetch.spec.whatwg.org/#fetch-method">fetch</a>. </p>
    </section>
    <section id="sotd">
     <p> This is an unofficial proposal. </p>
@@ -698,7 +698,7 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
    </section>
    <section>
     <h2 class="heading settled" data-level="2" id="solution"><span class="secno">2. </span><span class="content">Solution</span><a class="self-link" href="#solution"></a></h2>
-    <p>The <code class="highlight">importance</code> <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#enumerated-attribute" id="ref-for-enumerated-attribute②">enumerated attribute</a> may be used with resource-requesting elements including <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#link" id="ref-for-link①">link</a></code>, <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#img" id="ref-for-img①">img</a></code>, <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#script" id="ref-for-script①">script</a></code> and <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#iframe" id="ref-for-iframe①">iframe</a></code>. This keyword hints to the browser the relative fetch priority
+    <p>The <code class="highlight">importance</code> <a data-link-type="dfn" href="https://html.spec.whatwg.org#enumerated-attribute" id="ref-for-enumerated-attribute②">enumerated attribute</a> may be used with resource-requesting elements including <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#link" id="ref-for-link①">link</a></code>, <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#img" id="ref-for-img①">img</a></code>, <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#script" id="ref-for-script①">script</a></code> and <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#iframe" id="ref-for-iframe①">iframe</a></code>. This keyword hints to the browser the relative fetch priority
       a developer intends for a resource to have.</p>
     <ul>
      <li>
@@ -709,7 +709,7 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
        <li> <code class="highlight">low</code> - The developer considers the resource as being less important relative to other resources of
             the same type. 
        <li> <code class="highlight">auto</code> - The developer does not indicate a preference and defers to
-            the browser’s default heuristics. This also serves as the attribute’s <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#invalid-value-default" id="ref-for-invalid-value-default">invalid value default</a> and <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#missing-value-default" id="ref-for-missing-value-default">missing value default</a>. 
+            the browser’s default heuristics. This also serves as the attribute’s <a data-link-type="dfn" href="https://html.spec.whatwg.org#invalid-value-default" id="ref-for-invalid-value-default">invalid value default</a> and <a data-link-type="dfn" href="https://html.spec.whatwg.org#missing-value-default" id="ref-for-missing-value-default">missing value default</a>. 
       </ul>
     </ul>
     <p>With this attribute, the browser should make an effort to respect the developer’s preference for the importance of a
@@ -784,7 +784,7 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
     </ol>
     <h3 class="heading settled" data-level="3.3" id="html-integration"><span class="secno">3.3. </span><span class="content">HTML Integration</span><a class="self-link" href="#html-integration"></a></h3>
      <em>This section will be removed once the <a data-link-type="biblio" href="#biblio-html">HTML</a> specification has been modified.</em> 
-    <p>For the supported elements (<code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#img" id="ref-for-img②">img</a></code>, <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#link" id="ref-for-link②">link</a></code>, <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#script" id="ref-for-script②">script</a></code> and <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#iframe" id="ref-for-iframe②">iframe</a></code>) the integration
+    <p>For the supported elements (<code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#img" id="ref-for-img②">img</a></code>, <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#link" id="ref-for-link②">link</a></code>, <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#script" id="ref-for-script②">script</a></code> and <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#iframe" id="ref-for-iframe②">iframe</a></code>) the integration
     with HTML is to add an <code class="highlight" data-x>importance</code> attribute to the relevant element
     specification and pass the value through to the underlying fetch for the resource referenced
     by the given element.</p>
@@ -794,7 +794,7 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
     tasks affected).</p>
     <ol>
      <li>
-      <p>We extend the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#fetching-resources" id="ref-for-fetching-resources">Fetching resources</a> process with an additional section:</p>
+      <p>We extend the <a data-link-type="dfn" href="https://html.spec.whatwg.org#fetching-resources" id="ref-for-fetching-resources">Fetching resources</a> process with an additional section:</p>
       <p>Importance attributes</p>
       <p>An <dfn class="dfn-paneled" data-dfn-type="dfn" data-export id="importance-attribute">importance attribute</dfn> is an <span>enumerated attribute</span>.  Each <a data-link-type="dfn" href="#importance-enum" id="ref-for-importance-enum">Fetch importance enum</a> is a keyword for this attribute, mapping
         to a state of the same name.</p>
@@ -805,115 +805,116 @@ A human-readable <a href="http://www.w3.org/community/about/agreements/cla-deed/
     <h4 class="heading settled" data-level="3.3.1" id="img"><span class="secno">3.3.1. </span><span class="content">img</span><a class="self-link" href="#img"></a></h4>
     <ol>
      <li>
-      <p>We add to the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#img" id="ref-for-img③">img</a></code> element content attributes:</p>
+      <p>We add to the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#img" id="ref-for-img③">img</a></code> element content attributes:</p>
       <p><code class="highlight" data-x>importance</code> - Importance for <a data-link-type="dfn" href="https://fetch.spec.whatwg.org#concept-fetch" id="ref-for-concept-fetch②">fetches</a> initiated by the
           element. </p>
      <li>
-      We extend the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#img" id="ref-for-img④">img</a></code> element DOM interface as follows: 
+      We extend the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#img" id="ref-for-img④">img</a></code> element DOM interface as follows: 
 <pre class="idl highlight def"><c- b>partial</c-> <c- b>interface</c-> <a class="idl-code" data-link-type="interface" href="https://html.spec.whatwg.org/multipage/embedded-content.html#htmlimageelement" id="ref-for-htmlimageelement"><c- g>HTMLImageElement</c-></a> {
     [<a class="idl-code" data-link-type="extended-attribute" href="https://html.spec.whatwg.org/multipage/custom-elements.html#cereactions" id="ref-for-cereactions"><c- g>CEReactions</c-></a>] <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://webidl.spec.whatwg.org/#idl-DOMString" id="ref-for-idl-DOMString"><c- b>DOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="DOMString" href="#dom-htmlimageelement-importance" id="ref-for-dom-htmlimageelement-importance"><c- g>importance</c-></a>;
 };
 </pre>
      <li>
-      <p>We add to the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#img" id="ref-for-img⑤">img</a></code> element content attribute descriptions:</p>
+      <p>We add to the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#img" id="ref-for-img⑤">img</a></code> element content attribute descriptions:</p>
       <p>The <dfn data-dfn-for="img" data-dfn-type="element-attr" data-export data-lt="importance" id="element-attrdef-img-importance"><code class="highlight" data-x="attr-img-importance">importance</code> <a class="self-link" href="#element-attrdef-img-importance"></a></dfn> attribute is an <a data-link-type="dfn" href="#importance-attribute" id="ref-for-importance-attribute">importance attribute</a>. Its purpose is to set the <a data-link-type="dfn" href="#concept-request-importance" id="ref-for-concept-request-importance③">importance</a> used when <a data-link-type="dfn" href="https://fetch.spec.whatwg.org#concept-fetch" id="ref-for-concept-fetch③">fetching</a> the image.</p>
       <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="HTMLImageElement" data-dfn-type="attribute" data-export id="dom-htmlimageelement-importance"><code class="highlight" data-x="dom-img-importance">importance</code></dfn> IDL attribute must <span>reflect</span> the <code class="highlight" data-x="attr-img-importance">importance</code> content attribute, <span>limited to only known values</span>.</p>
      <li>
-      <p>We add a step to <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#update-the-image-data" id="ref-for-update-the-image-data">Updating the image data</a> before fetching the
+      <p>We add a step to <a data-link-type="dfn" href="https://html.spec.whatwg.org#update-the-image-data" id="ref-for-update-the-image-data">Updating the image data</a> before fetching the
           image:</p>
       <p>Set <var>request</var>’s <code class="idl"><a data-link-type="idl" href="#dom-request-importance" id="ref-for-dom-request-importance①">importance</a></code> to the current state of the element’s <code class="highlight" data-x="attr-img-importance">importance</code> attribute.</p>
      <li>
-      <p>We add a step to <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#reacting-to-environment-changes" id="ref-for-reacting-to-environment-changes">Reacting to environment changes</a> when setting the image request’s
+      <p>We add a step to <a data-link-type="dfn" href="https://html.spec.whatwg.org#reacting-to-environment-changes" id="ref-for-reacting-to-environment-changes">Reacting to environment changes</a> when setting the image request’s
           image data, before the request is fetched:</p>
       <p>Set <var>request</var>’s <code class="idl"><a data-link-type="idl" href="#dom-request-importance" id="ref-for-dom-request-importance②">importance</a></code> to the current state of the element’s <code class="highlight" data-x="attr-img-importance">importance</code> attribute.</p>
-     <li>We modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#elements-3" id="ref-for-elements-3">List of elements</a> to include the <span data-x="attr-img-importance">importance</span> attribute on the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#img" id="ref-for-img⑥">img</a></code> element. 
+     <li>We modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org#elements-3" id="ref-for-elements-3">List of elements</a> to include the <span data-x="attr-img-importance">importance</span> attribute on the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#img" id="ref-for-img⑥">img</a></code> element. 
     </ol>
     <h4 class="heading settled" data-level="3.3.2" id="picture"><span class="secno">3.3.2. </span><span class="content">picture</span><a class="self-link" href="#picture"></a></h4>
     <p>In the case of the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element" id="ref-for-the-picture-element">picture</a></code> element, no changes are necessary. The importance is applied
-    to the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#img" id="ref-for-img⑦">img</a></code> element within the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element" id="ref-for-the-picture-element①">picture</a></code> and applied to whatever <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/embedded-content.html#the-source-element" id="ref-for-the-source-element">source</a></code> ends up being
+    to the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#img" id="ref-for-img⑦">img</a></code> element within the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element" id="ref-for-the-picture-element①">picture</a></code> and applied to whatever <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage/embedded-content.html#the-source-element" id="ref-for-the-source-element">source</a></code> ends up being
     used. </p>
     <h4 class="heading settled" data-level="3.3.3" id="link"><span class="secno">3.3.3. </span><span class="content">link</span><a class="self-link" href="#link"></a></h4>
     <ol>
      <li>
-      <p>We add to the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#the-link-element" id="ref-for-the-link-element">link element</a> content attributes:</p>
+      <p>We add to the <a data-link-type="dfn" href="https://html.spec.whatwg.org#the-link-element" id="ref-for-the-link-element">link element</a> content attributes:</p>
       <p><code class="highlight" data-x>importance</code> - Importance for <a data-link-type="dfn" href="https://fetch.spec.whatwg.org#concept-fetch" id="ref-for-concept-fetch④">fetches</a> initiated by the
           element. </p>
      <li>
-      <p>We add to the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#the-link-element" id="ref-for-the-link-element①">link element</a> content attribute descriptions:</p>
-      <p>The <dfn data-dfn-for="link" data-dfn-type="element-attr" data-export data-lt="importance" id="element-attrdef-link-importance"><code class="highlight" data-x="attr-link-importance">importance</code> <a class="self-link" href="#element-attrdef-link-importance"></a></dfn> attribute is an <a data-link-type="dfn" href="#importance-attribute" id="ref-for-importance-attribute①">importance attribute</a>. It is intended for use with <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#external-resource-link" id="ref-for-external-resource-link">external resource links</a>, where it helps set the <a data-link-type="dfn" href="#concept-request-importance" id="ref-for-concept-request-importance④">importance</a> used when <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#fetch-and-process-the-linked-resource" id="ref-for-fetch-and-process-the-linked-resource">fetching and processing the linked resource</a>.</p>
+      <p>We add to the <a data-link-type="dfn" href="https://html.spec.whatwg.org#the-link-element" id="ref-for-the-link-element①">link element</a> content attribute descriptions:</p>
+      <p>The <dfn data-dfn-for="link" data-dfn-type="element-attr" data-export data-lt="importance" id="element-attrdef-link-importance"><code class="highlight" data-x="attr-link-importance">importance</code> <a class="self-link" href="#element-attrdef-link-importance"></a></dfn> attribute is an <a data-link-type="dfn" href="#importance-attribute" id="ref-for-importance-attribute①">importance attribute</a>. It is intended for use with <a data-link-type="dfn" href="https://html.spec.whatwg.org#external-resource-link" id="ref-for-external-resource-link">external resource links</a>, where it helps set the <a data-link-type="dfn" href="#concept-request-importance" id="ref-for-concept-request-importance④">importance</a> used when <a data-link-type="dfn" href="https://html.spec.whatwg.org#fetch-and-process-the-linked-resource" id="ref-for-fetch-and-process-the-linked-resource">fetching and processing the linked resource</a>.</p>
      <li>
-      We extend the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#link" id="ref-for-link③">link</a></code> element as follows: 
+      We extend the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#link" id="ref-for-link③">link</a></code> element as follows: 
 <pre class="idl highlight def"><c- b>partial</c-> <c- b>interface</c-> <a class="idl-code" data-link-type="interface" href="https://html.spec.whatwg.org/multipage/semantics.html#htmllinkelement" id="ref-for-htmllinkelement"><c- g>HTMLLinkElement</c-></a> {
     [<a class="idl-code" data-link-type="extended-attribute" href="https://html.spec.whatwg.org/multipage/custom-elements.html#cereactions" id="ref-for-cereactions①"><c- g>CEReactions</c-></a>] <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://webidl.spec.whatwg.org/#idl-DOMString" id="ref-for-idl-DOMString①"><c- b>DOMString</c-></a> <dfn class="idl-code" data-dfn-for="HTMLLinkElement" data-dfn-type="attribute" data-export data-type="DOMString" id="dom-htmllinkelement-importance"><code class="highlight"><c- g>importance</c-></code><a class="self-link" href="#dom-htmllinkelement-importance"></a></dfn>;
 };
 </pre>
      <li>
-      <p>We extend <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#create-a-link-element-request" id="ref-for-create-a-link-element-request">create a link element request</a> of <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#fetching-and-processing-a-resource-from-a-link-element" id="ref-for-fetching-and-processing-a-resource-from-a-link-element">Fetching and processing a resource
+      <p>We extend <a data-link-type="dfn" href="https://html.spec.whatwg.org#create-a-link-element-request" id="ref-for-create-a-link-element-request">create a link element request</a> of <a data-link-type="dfn" href="https://html.spec.whatwg.org#fetching-and-processing-a-resource-from-a-link-element" id="ref-for-fetching-and-processing-a-resource-from-a-link-element">Fetching and processing a resource
         from a link element</a> by adding a step before returning the request:</p>
       <p>Set <var>request</var>’s <code class="idl"><a data-link-type="idl" href="#dom-request-importance" id="ref-for-dom-request-importance③">importance</a></code> to the current state of <var> el</var>’s <code class="highlight" data-x="attr-link-importance">importance</code> content attribute.</p>
      <li>
-      <p>We extend the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#fetch-and-process-the-linked-resource" id="ref-for-fetch-and-process-the-linked-resource①">fetch and process the linked resource</a> algorithm of <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#link-type-modulepreload" id="ref-for-link-type-modulepreload">modulepreload</a> links by adding a step before setting the render-blocking state:</p>
+      <p>We extend the <a data-link-type="dfn" href="https://html.spec.whatwg.org#fetch-and-process-the-linked-resource" id="ref-for-fetch-and-process-the-linked-resource①">fetch and process the linked resource</a> algorithm of <a data-link-type="dfn" href="https://html.spec.whatwg.org#link-type-modulepreload" id="ref-for-link-type-modulepreload">modulepreload</a> links by adding a step before setting the render-blocking state:</p>
       <p>Let <code class="idl"><a data-link-type="idl" href="#dom-request-importance" id="ref-for-dom-request-importance④">importance</a></code> be the current state of the element’s <code class="highlight" data-x="attr-link-importance">importance</code> attribute.</p>
-     <li>We modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#elements-3" id="ref-for-elements-3①">List of elements</a> to include the <span data-x="attr-link-importance">importance</span> attribute on the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#link" id="ref-for-link④">link</a></code> element. 
+     <li>We modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org#elements-3" id="ref-for-elements-3①">List of elements</a> to include the <span data-x="attr-link-importance">importance</span> attribute on the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#link" id="ref-for-link④">link</a></code> element. 
     </ol>
     <h4 class="heading settled" data-level="3.3.4" id="script"><span class="secno">3.3.4. </span><span class="content">script</span><a class="self-link" href="#script"></a></h4>
     <ol>
      <li>
-      <p>We add to the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#script" id="ref-for-script③">script</a></code> element content attributes:</p>
+      <p>We add to the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#script" id="ref-for-script③">script</a></code> element content attributes:</p>
       <p><code class="highlight" data-x>importance</code> - Importance for <a data-link-type="dfn" href="https://fetch.spec.whatwg.org#concept-fetch" id="ref-for-concept-fetch⑤">fetches</a> initiated by the
           element. </p>
      <li>
-      We extend the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#script" id="ref-for-script④">script</a></code> element DOM interface as follows: 
+      We extend the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#script" id="ref-for-script④">script</a></code> element DOM interface as follows: 
 <pre class="idl highlight def"><c- b>partial</c-> <c- b>interface</c-> <a class="idl-code" data-link-type="interface" href="https://html.spec.whatwg.org/multipage/scripting.html#htmlscriptelement" id="ref-for-htmlscriptelement"><c- g>HTMLScriptElement</c-></a> {
     [<a class="idl-code" data-link-type="extended-attribute" href="https://html.spec.whatwg.org/multipage/custom-elements.html#cereactions" id="ref-for-cereactions②"><c- g>CEReactions</c-></a>] <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://webidl.spec.whatwg.org/#idl-DOMString" id="ref-for-idl-DOMString②"><c- b>DOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="DOMString" href="#dom-htmlscriptelement-importance" id="ref-for-dom-htmlscriptelement-importance"><c- g>importance</c-></a>;
 };
 </pre>
      <li>
-      <p>We add to the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#script" id="ref-for-script⑤">script</a></code> element content attribute descriptions:</p>
+      <p>We add to the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#script" id="ref-for-script⑤">script</a></code> element content attribute descriptions:</p>
       <ol>
        <li>The <dfn data-dfn-for="script" data-dfn-type="element-attr" data-export data-lt="importance" id="element-attrdef-script-importance"><code class="highlight" data-x="attr-script-importance">importance </code><a class="self-link" href="#element-attrdef-script-importance"></a></dfn> attribute is an <a data-link-type="dfn" href="#importance-attribute" id="ref-for-importance-attribute②">importance attribute</a>. Its purpose is to set the <a data-link-type="dfn" href="#concept-request-importance" id="ref-for-concept-request-importance⑤">importance</a> used when <a data-link-type="dfn" href="https://fetch.spec.whatwg.org#concept-fetch" id="ref-for-concept-fetch⑥">fetching</a> the script. 
        <li>The <dfn class="dfn-paneled idl-code" data-dfn-for="HTMLScriptElement" data-dfn-type="attribute" data-export id="dom-htmlscriptelement-importance"><code class="highlight" data-x="dom-script-importance">importance</code></dfn> IDL attribute must <span>reflect</span> the <code class="highlight" data-x="attr-script-importance">importance</code> content attribute, <span>limited to only known values</span>. 
        <li>We add <code class="highlight" data-x="attr-script-importance">importance</code> to the list of
-            attributes that have no direct effect when changed dynamically. 
+            attributes that have no <a data-link-type="dfn" href="https://html.spec.whatwg.org#:~:text=dynamically%20has%20no%20direct%20effect" id="ref-for-:~:text=dynamically%20has%20no%20direct%20effect">direct effect when changed dynamically</a> (For browsers that
+            don’t support text linking, search for "dynamically has no direct effect"). 
       </ol>
-     <li>We modify the list of attributes not to be specified when used in <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#data-block" id="ref-for-data-block">data blocks</a> to
+     <li>We modify the list of attributes not to be specified when used in <a data-link-type="dfn" href="https://html.spec.whatwg.org#the-script-element:data-block-2" id="ref-for-the-script-element:data-block-2">data blocks</a> to
         include the <code class="highlight" data-x="attr-script-importance">importance</code> attribute. 
      <li>
-      <p>We extend the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#script-fetch-options" id="ref-for-script-fetch-options">Script fetch options</a> struct:</p>
+      <p>We extend the <a data-link-type="dfn" href="https://html.spec.whatwg.org#script-fetch-options" id="ref-for-script-fetch-options">Script fetch options</a> struct:</p>
       <p></p>
       <p><span data-x="concept-script-fetch-options-importance">importance</span> - The <code class="idl"><a data-link-type="idl" href="#dom-request-importance" id="ref-for-dom-request-importance⑤">importance</a></code> for the initial <a data-link-type="dfn" href="https://fetch.spec.whatwg.org#concept-fetch" id="ref-for-concept-fetch⑦">fetch</a>.</p>
-     <li>We extend <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#default-classic-script-fetch-options" id="ref-for-default-classic-script-fetch-options">default classic script fetch options</a> to include "<code class="highlight">auto</code>"
+     <li>We extend <a data-link-type="dfn" href="https://html.spec.whatwg.org#default-classic-script-fetch-options" id="ref-for-default-classic-script-fetch-options">default classic script fetch options</a> to include "<code class="highlight">auto</code>"
         as the default value for <code class="highlight" data-x="concept-script-fetch-options-importance"> importance </code>. 
-     <li>We extend <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#set-up-the-classic-script-request" id="ref-for-set-up-the-classic-script-request">set up the classic script request</a> to set <var>request</var>’s <code class="idl"><a data-link-type="idl" href="#dom-request-importance" id="ref-for-dom-request-importance⑥">importance</a></code> to <var>option</var>’s <code class="highlight" data-x="concept-script-fetch-options-importance">importance</code> 
+     <li>We extend <a data-link-type="dfn" href="https://html.spec.whatwg.org#set-up-the-classic-script-request" id="ref-for-set-up-the-classic-script-request">set up the classic script request</a> to set <var>request</var>’s <code class="idl"><a data-link-type="idl" href="#dom-request-importance" id="ref-for-dom-request-importance⑥">importance</a></code> to <var>option</var>’s <code class="highlight" data-x="concept-script-fetch-options-importance">importance</code> 
      <li>
-      <p>We insert a step before step 24 of <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#prepare-a-script" id="ref-for-prepare-a-script">prepare a script</a>:</p>
+      <p>We insert a step before step 24 of <a data-link-type="dfn" href="https://html.spec.whatwg.org#prepare-a-script" id="ref-for-prepare-a-script">prepare a script</a>:</p>
       <p>Let <var>importance</var> be the current state of the element’s <code class="highlight" data-x="attr-script-importance">importance</code> attribute.</p>
      <li>
-      <p>We modify step 24 of <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#prepare-a-script" id="ref-for-prepare-a-script①">prepare a script</a> to include:</p>
+      <p>We modify step 24 of <a data-link-type="dfn" href="https://html.spec.whatwg.org#prepare-a-script" id="ref-for-prepare-a-script①">prepare a script</a> to include:</p>
       <p><code class="highlight" data-x="concept-script-fetch-options-importance">importance</code> is <var>importance</var>.</p>
-     <li>We extend <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#set-up-the-module-script-request" id="ref-for-set-up-the-module-script-request">set up the module script request</a> to set <var>request</var>’s <code class="idl"><a data-link-type="idl" href="#dom-request-importance" id="ref-for-dom-request-importance⑦">importance</a></code> to <var>option</var>’s <code class="highlight" data-x="concept-script-fetch-options-importance">importance</code> 
-     <li>We modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#elements-3" id="ref-for-elements-3②">List of elements</a> to include the <span data-x="attr-script-importance">importance</span> attribute on the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#script" id="ref-for-script⑥">script</a></code> element. 
+     <li>We extend <a data-link-type="dfn" href="https://html.spec.whatwg.org#set-up-the-module-script-request" id="ref-for-set-up-the-module-script-request">set up the module script request</a> to set <var>request</var>’s <code class="idl"><a data-link-type="idl" href="#dom-request-importance" id="ref-for-dom-request-importance⑦">importance</a></code> to <var>option</var>’s <code class="highlight" data-x="concept-script-fetch-options-importance">importance</code> 
+     <li>We modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org#elements-3" id="ref-for-elements-3②">List of elements</a> to include the <span data-x="attr-script-importance">importance</span> attribute on the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#script" id="ref-for-script⑥">script</a></code> element. 
     </ol>
     <h4 class="heading settled" data-level="3.3.5" id="iframe"><span class="secno">3.3.5. </span><span class="content">iframe</span><a class="self-link" href="#iframe"></a></h4>
     <ol>
      <li>
-      <p>We add to the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#iframe" id="ref-for-iframe③">iframe</a></code> element content attributes:</p>
+      <p>We add to the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#iframe" id="ref-for-iframe③">iframe</a></code> element content attributes:</p>
       <p><code class="highlight" data-x>importance</code> - Importance for <a data-link-type="dfn" href="https://fetch.spec.whatwg.org#concept-fetch" id="ref-for-concept-fetch⑧">fetches</a> initiated by the
           element. </p>
      <li>
-      We extend the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#iframe" id="ref-for-iframe④">iframe</a></code> element DOM interface as follows: 
+      We extend the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#iframe" id="ref-for-iframe④">iframe</a></code> element DOM interface as follows: 
 <pre class="idl highlight def"><c- b>partial</c-> <c- b>interface</c-> <a class="idl-code" data-link-type="interface" href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#htmliframeelement" id="ref-for-htmliframeelement"><c- g>HTMLIFrameElement</c-></a> {
     [<a class="idl-code" data-link-type="extended-attribute" href="https://html.spec.whatwg.org/multipage/custom-elements.html#cereactions" id="ref-for-cereactions③"><c- g>CEReactions</c-></a>] <c- b>attribute</c-> <a class="idl-code" data-link-type="interface" href="https://webidl.spec.whatwg.org/#idl-DOMString" id="ref-for-idl-DOMString③"><c- b>DOMString</c-></a> <a class="idl-code" data-link-type="attribute" data-type="DOMString" href="#dom-htmliframeelement-importance" id="ref-for-dom-htmliframeelement-importance"><c- g>importance</c-></a>;
 };
 </pre>
      <li>
-      <p>We add to the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#iframe" id="ref-for-iframe⑤">iframe</a></code> content attribute descriptions:</p>
-      <p>The <dfn data-dfn-for="iframe" data-dfn-type="element-attr" data-export data-lt="importance" id="element-attrdef-iframe-importance"><code class="highlight" data-x="attr-iframe-importance">importance </code><a class="self-link" href="#element-attrdef-iframe-importance"></a></dfn> attribute is an <a data-link-type="dfn" href="#importance-attribute" id="ref-for-importance-attribute③">importance attribute</a>. Its purpose is to set the <a data-link-type="dfn" href="#concept-request-importance" id="ref-for-concept-request-importance⑥">importance</a> used when <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#process-the-iframe-attributes" id="ref-for-process-the-iframe-attributes">processing the iframe attributes</a>.</p>
+      <p>We add to the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#iframe" id="ref-for-iframe⑤">iframe</a></code> content attribute descriptions:</p>
+      <p>The <dfn data-dfn-for="iframe" data-dfn-type="element-attr" data-export data-lt="importance" id="element-attrdef-iframe-importance"><code class="highlight" data-x="attr-iframe-importance">importance </code><a class="self-link" href="#element-attrdef-iframe-importance"></a></dfn> attribute is an <a data-link-type="dfn" href="#importance-attribute" id="ref-for-importance-attribute③">importance attribute</a>. Its purpose is to set the <a data-link-type="dfn" href="#concept-request-importance" id="ref-for-concept-request-importance⑥">importance</a> used when <a data-link-type="dfn" href="https://html.spec.whatwg.org#process-the-iframe-attributes" id="ref-for-process-the-iframe-attributes">processing the iframe attributes</a>.</p>
       <p>The <dfn class="dfn-paneled idl-code" data-dfn-for="HTMLIFrameElement" data-dfn-type="attribute" data-export id="dom-htmliframeelement-importance"><code class="highlight" data-x="dom-iframe-importance">importance</code></dfn> IDL attribute must <span>reflect</span> the <code class="highlight" data-x="attr-iframe-importance">importance</code> content attribute, <span>limited to only known values</span>.</p>
      <li>
-      <p>We modify step 5 (the resource creation step) of <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#shared-attribute-processing-steps-for-iframe-and-frame-elements" id="ref-for-shared-attribute-processing-steps-for-iframe-and-frame-elements">shared attribute processing steps for iframe and frame elements</a> to include:</p>
+      <p>We modify step 5 (the resource creation step) of <a data-link-type="dfn" href="https://html.spec.whatwg.org#shared-attribute-processing-steps-for-iframe-and-frame-elements" id="ref-for-shared-attribute-processing-steps-for-iframe-and-frame-elements">shared attribute processing steps for iframe and frame elements</a> to include:</p>
       <p>...and whose <code class="idl"><a data-link-type="idl" href="#dom-request-importance" id="ref-for-dom-request-importance⑧">importance</a></code> is the current state of element’s <code class="highlight" data-x="attr-iframe-importance">importance</code> content attribute</p>
-     <li>We modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org/multipage#elements-3" id="ref-for-elements-3③">List of elements</a> to include the <span data-x="attr-iframe-importance">importance</span> attribute on the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#iframe" id="ref-for-iframe⑥">iframe</a></code> element. 
+     <li>We modify the <a data-link-type="dfn" href="https://html.spec.whatwg.org#elements-3" id="ref-for-elements-3③">List of elements</a> to include the <span data-x="attr-iframe-importance">importance</span> attribute on the <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#iframe" id="ref-for-iframe⑥">iframe</a></code> element. 
     </ol>
     <h2 class="heading settled" data-level="4" id="effects-of-priority-hints"><span class="secno">4. </span><span class="content">Effects of Priority Hints</span><a class="self-link" href="#effects-of-priority-hints"></a></h2>
     <p>Since the user agents' resource loading pipeline is largely unspecified, this document doesn’t describe a specific mapping
@@ -1065,7 +1066,7 @@ Link<c- o>:</c-> <c- o>&lt;</c->/app/script.js>; importance=low
     <ul>
      <li>Signal that certain images should not block the load event.
      <li>Signals relating the script execution order, script execution grouping, execution dependency, etc.
-     <li>Signal the execution priority of <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#script" id="ref-for-script⑦">script</a></code> or <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org/multipage#iframe" id="ref-for-iframe⑦">iframe</a></code> elements beyond the load of the initial resource.
+     <li>Signal the execution priority of <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#script" id="ref-for-script⑦">script</a></code> or <code class="highlight"><a data-link-type="element" href="https://html.spec.whatwg.org#iframe" id="ref-for-iframe⑦">iframe</a></code> elements beyond the load of the initial resource.
     </ul>
    </section>
    <section>
@@ -1302,62 +1303,68 @@ Link<c- o>:</c-> <c- o>&lt;</c->/app/script.js>; importance=low
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-create-a-link-element-request">
-   <a href="https://html.spec.whatwg.org/multipage#create-a-link-element-request">https://html.spec.whatwg.org/multipage#create-a-link-element-request</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#create-a-link-element-request">https://html.spec.whatwg.org#create-a-link-element-request</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-create-a-link-element-request">3.3.3. link</a>
    </ul>
   </aside>
-  <aside class="dfn-panel" data-for="term-for-data-block">
-   <a href="https://html.spec.whatwg.org/multipage#data-block">https://html.spec.whatwg.org/multipage#data-block</a><b>Referenced in:</b>
+  <aside class="dfn-panel" data-for="term-for-the-script-element:data-block-2">
+   <a href="https://html.spec.whatwg.org#the-script-element:data-block-2">https://html.spec.whatwg.org#the-script-element:data-block-2</a><b>Referenced in:</b>
    <ul>
-    <li><a href="#ref-for-data-block">3.3.4. script</a>
+    <li><a href="#ref-for-the-script-element:data-block-2">3.3.4. script</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-default-classic-script-fetch-options">
-   <a href="https://html.spec.whatwg.org/multipage#default-classic-script-fetch-options">https://html.spec.whatwg.org/multipage#default-classic-script-fetch-options</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#default-classic-script-fetch-options">https://html.spec.whatwg.org#default-classic-script-fetch-options</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-default-classic-script-fetch-options">3.3.4. script</a>
    </ul>
   </aside>
+  <aside class="dfn-panel" data-for="term-for-:~:text=dynamically%20has%20no%20direct%20effect">
+   <a href="https://html.spec.whatwg.org#:~:text=dynamically%20has%20no%20direct%20effect">https://html.spec.whatwg.org#:~:text=dynamically%20has%20no%20direct%20effect</a><b>Referenced in:</b>
+   <ul>
+    <li><a href="#ref-for-:~:text=dynamically%2520has%2520no%2520direct%2520effect">3.3.4. script</a>
+   </ul>
+  </aside>
   <aside class="dfn-panel" data-for="term-for-enumerated-attribute">
-   <a href="https://html.spec.whatwg.org/multipage#enumerated-attribute">https://html.spec.whatwg.org/multipage#enumerated-attribute</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#enumerated-attribute">https://html.spec.whatwg.org#enumerated-attribute</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-enumerated-attribute">Unnumbered Section</a> <a href="#ref-for-enumerated-attribute①">(2)</a>
     <li><a href="#ref-for-enumerated-attribute②">2. Solution</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-external-resource-link">
-   <a href="https://html.spec.whatwg.org/multipage#external-resource-link">https://html.spec.whatwg.org/multipage#external-resource-link</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#external-resource-link">https://html.spec.whatwg.org#external-resource-link</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-external-resource-link">3.3.3. link</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-fetch-and-process-the-linked-resource">
-   <a href="https://html.spec.whatwg.org/multipage#fetch-and-process-the-linked-resource">https://html.spec.whatwg.org/multipage#fetch-and-process-the-linked-resource</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#fetch-and-process-the-linked-resource">https://html.spec.whatwg.org#fetch-and-process-the-linked-resource</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-fetch-and-process-the-linked-resource">3.3.3. link</a> <a href="#ref-for-fetch-and-process-the-linked-resource①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-fetching-and-processing-a-resource-from-a-link-element">
-   <a href="https://html.spec.whatwg.org/multipage#fetching-and-processing-a-resource-from-a-link-element">https://html.spec.whatwg.org/multipage#fetching-and-processing-a-resource-from-a-link-element</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#fetching-and-processing-a-resource-from-a-link-element">https://html.spec.whatwg.org#fetching-and-processing-a-resource-from-a-link-element</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-fetching-and-processing-a-resource-from-a-link-element">3.3.3. link</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-fetch-and-process-the-linked-resource">
-   <a href="https://html.spec.whatwg.org/multipage#fetch-and-process-the-linked-resource">https://html.spec.whatwg.org/multipage#fetch-and-process-the-linked-resource</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#fetch-and-process-the-linked-resource">https://html.spec.whatwg.org#fetch-and-process-the-linked-resource</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-fetch-and-process-the-linked-resource">3.3.3. link</a> <a href="#ref-for-fetch-and-process-the-linked-resource①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-fetching-resources">
-   <a href="https://html.spec.whatwg.org/multipage#fetching-resources">https://html.spec.whatwg.org/multipage#fetching-resources</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#fetching-resources">https://html.spec.whatwg.org#fetching-resources</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-fetching-resources">3.3. HTML Integration</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-iframe">
-   <a href="https://html.spec.whatwg.org/multipage#iframe">https://html.spec.whatwg.org/multipage#iframe</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#iframe">https://html.spec.whatwg.org#iframe</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-iframe">Unnumbered Section</a>
     <li><a href="#ref-for-iframe①">2. Solution</a>
@@ -1367,7 +1374,7 @@ Link<c- o>:</c-> <c- o>&lt;</c->/app/script.js>; importance=low
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-img">
-   <a href="https://html.spec.whatwg.org/multipage#img">https://html.spec.whatwg.org/multipage#img</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#img">https://html.spec.whatwg.org#img</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-img">Unnumbered Section</a>
     <li><a href="#ref-for-img①">2. Solution</a>
@@ -1377,13 +1384,13 @@ Link<c- o>:</c-> <c- o>&lt;</c->/app/script.js>; importance=low
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-invalid-value-default">
-   <a href="https://html.spec.whatwg.org/multipage#invalid-value-default">https://html.spec.whatwg.org/multipage#invalid-value-default</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#invalid-value-default">https://html.spec.whatwg.org#invalid-value-default</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-invalid-value-default">2. Solution</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-link">
-   <a href="https://html.spec.whatwg.org/multipage#link">https://html.spec.whatwg.org/multipage#link</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#link">https://html.spec.whatwg.org#link</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-link">Unnumbered Section</a>
     <li><a href="#ref-for-link①">2. Solution</a>
@@ -1392,13 +1399,13 @@ Link<c- o>:</c-> <c- o>&lt;</c->/app/script.js>; importance=low
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-the-link-element">
-   <a href="https://html.spec.whatwg.org/multipage#the-link-element">https://html.spec.whatwg.org/multipage#the-link-element</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#the-link-element">https://html.spec.whatwg.org#the-link-element</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-the-link-element">3.3.3. link</a> <a href="#ref-for-the-link-element①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-elements-3">
-   <a href="https://html.spec.whatwg.org/multipage#elements-3">https://html.spec.whatwg.org/multipage#elements-3</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#elements-3">https://html.spec.whatwg.org#elements-3</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-elements-3">3.3.1. img</a>
     <li><a href="#ref-for-elements-3①">3.3.3. link</a>
@@ -1407,13 +1414,13 @@ Link<c- o>:</c-> <c- o>&lt;</c->/app/script.js>; importance=low
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-missing-value-default">
-   <a href="https://html.spec.whatwg.org/multipage#missing-value-default">https://html.spec.whatwg.org/multipage#missing-value-default</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#missing-value-default">https://html.spec.whatwg.org#missing-value-default</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-missing-value-default">2. Solution</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-link-type-modulepreload">
-   <a href="https://html.spec.whatwg.org/multipage#link-type-modulepreload">https://html.spec.whatwg.org/multipage#link-type-modulepreload</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#link-type-modulepreload">https://html.spec.whatwg.org#link-type-modulepreload</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-link-type-modulepreload">3.3.3. link</a>
    </ul>
@@ -1425,25 +1432,25 @@ Link<c- o>:</c-> <c- o>&lt;</c->/app/script.js>; importance=low
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-prepare-a-script">
-   <a href="https://html.spec.whatwg.org/multipage#prepare-a-script">https://html.spec.whatwg.org/multipage#prepare-a-script</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#prepare-a-script">https://html.spec.whatwg.org#prepare-a-script</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-prepare-a-script">3.3.4. script</a> <a href="#ref-for-prepare-a-script①">(2)</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-process-the-iframe-attributes">
-   <a href="https://html.spec.whatwg.org/multipage#process-the-iframe-attributes">https://html.spec.whatwg.org/multipage#process-the-iframe-attributes</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#process-the-iframe-attributes">https://html.spec.whatwg.org#process-the-iframe-attributes</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-process-the-iframe-attributes">3.3.5. iframe</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-reacting-to-environment-changes">
-   <a href="https://html.spec.whatwg.org/multipage#reacting-to-environment-changes">https://html.spec.whatwg.org/multipage#reacting-to-environment-changes</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#reacting-to-environment-changes">https://html.spec.whatwg.org#reacting-to-environment-changes</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-reacting-to-environment-changes">3.3.1. img</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-script">
-   <a href="https://html.spec.whatwg.org/multipage#script">https://html.spec.whatwg.org/multipage#script</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#script">https://html.spec.whatwg.org#script</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-script">Unnumbered Section</a>
     <li><a href="#ref-for-script①">2. Solution</a>
@@ -1453,25 +1460,25 @@ Link<c- o>:</c-> <c- o>&lt;</c->/app/script.js>; importance=low
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-script-fetch-options">
-   <a href="https://html.spec.whatwg.org/multipage#script-fetch-options">https://html.spec.whatwg.org/multipage#script-fetch-options</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#script-fetch-options">https://html.spec.whatwg.org#script-fetch-options</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-script-fetch-options">3.3.4. script</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-set-up-the-classic-script-request">
-   <a href="https://html.spec.whatwg.org/multipage#set-up-the-classic-script-request">https://html.spec.whatwg.org/multipage#set-up-the-classic-script-request</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#set-up-the-classic-script-request">https://html.spec.whatwg.org#set-up-the-classic-script-request</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-set-up-the-classic-script-request">3.3.4. script</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-set-up-the-module-script-request">
-   <a href="https://html.spec.whatwg.org/multipage#set-up-the-module-script-request">https://html.spec.whatwg.org/multipage#set-up-the-module-script-request</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#set-up-the-module-script-request">https://html.spec.whatwg.org#set-up-the-module-script-request</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-set-up-the-module-script-request">3.3.4. script</a>
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-shared-attribute-processing-steps-for-iframe-and-frame-elements">
-   <a href="https://html.spec.whatwg.org/multipage#shared-attribute-processing-steps-for-iframe-and-frame-elements">https://html.spec.whatwg.org/multipage#shared-attribute-processing-steps-for-iframe-and-frame-elements</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#shared-attribute-processing-steps-for-iframe-and-frame-elements">https://html.spec.whatwg.org#shared-attribute-processing-steps-for-iframe-and-frame-elements</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-shared-attribute-processing-steps-for-iframe-and-frame-elements">3.3.5. iframe</a>
    </ul>
@@ -1483,7 +1490,7 @@ Link<c- o>:</c-> <c- o>&lt;</c->/app/script.js>; importance=low
    </ul>
   </aside>
   <aside class="dfn-panel" data-for="term-for-update-the-image-data">
-   <a href="https://html.spec.whatwg.org/multipage#update-the-image-data">https://html.spec.whatwg.org/multipage#update-the-image-data</a><b>Referenced in:</b>
+   <a href="https://html.spec.whatwg.org#update-the-image-data">https://html.spec.whatwg.org#update-the-image-data</a><b>Referenced in:</b>
    <ul>
     <li><a href="#ref-for-update-the-image-data">3.3.1. img</a>
    </ul>
@@ -1520,8 +1527,9 @@ Link<c- o>:</c-> <c- o>&lt;</c->/app/script.js>; importance=low
      <li><span class="dfn-paneled" id="term-for-htmllinkelement">HTMLLinkElement</span>
      <li><span class="dfn-paneled" id="term-for-htmlscriptelement">HTMLScriptElement</span>
      <li><span class="dfn-paneled" id="term-for-create-a-link-element-request">create a link element request</span>
-     <li><span class="dfn-paneled" id="term-for-data-block">data blocks</span>
+     <li><span class="dfn-paneled" id="term-for-the-script-element:data-block-2">data blocks</span>
      <li><span class="dfn-paneled" id="term-for-default-classic-script-fetch-options">default classic script fetch options</span>
+     <li><span class="dfn-paneled" id="term-for-:~:text=dynamically%20has%20no%20direct%20effect">direct effect when changed dynamically</span>
      <li><span class="dfn-paneled" id="term-for-enumerated-attribute">enumerated attribute</span>
      <li><span class="dfn-paneled" id="term-for-external-resource-link">external resource links</span>
      <li><span class="dfn-paneled" id="term-for-fetch-and-process-the-linked-resource">fetch and process the linked resource</span>
