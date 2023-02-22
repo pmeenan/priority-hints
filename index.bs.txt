@@ -16,17 +16,17 @@ Markup Shorthands: markdown yes
 Default Highlight: js
 </pre>
 
-<script>
-(function() {
+<body>
+  <section>
+    <h2 id="introduction">Introduction</h2>
+    <p>
+      This specification is no longer relevant and has been merged directly into the [[FETCH|Fetch]] and [[HTML|HTML]] specifications.
+      Please see the [explainer](https://github.com/WICG/priority-hints/blob/main/EXPLAINER.md) for more details and usage examples.
+    </p>
+  </section>
+  <script>
   window.location.replace("https://github.com/WICG/priority-hints/blob/main/EXPLAINER.md");
-})();
-</script>
+  </script>
+</body>
 
-<!-- ============================================================ -->
-# Introduction # {#intro}
-<!-- ============================================================ -->
-
-*This section is non-normative.*
-
-This specification is no longer relevant and has been merged directly into the [[FETCH|Fetch]] and [[HTML|HTML]] specifications.
-Please see the [explainer](https://github.com/WICG/priority-hints/blob/main/EXPLAINER.md) for more details and usage examples.
+</html>
