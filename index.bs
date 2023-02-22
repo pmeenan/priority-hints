@@ -16,12 +16,6 @@ Markup Shorthands: markdown yes
 Default Highlight: js
 </pre>
 
-<script>
-(function() {
-  window.location.replace("https://github.com/WICG/priority-hints/blob/main/EXPLAINER.md");
-})();
-</script>
-
 <!-- ============================================================ -->
 # Introduction # {#intro}
 <!-- ============================================================ -->
