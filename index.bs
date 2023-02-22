@@ -16,6 +16,10 @@ Markup Shorthands: markdown yes
 Default Highlight: js
 </pre>
 
+<script>
+window.location.replace("https://github.com/WICG/priority-hints/blob/main/EXPLAINER.md");
+</script>
+
 <body>
   <section>
     <p>
@@ -38,9 +42,6 @@ Default Highlight: js
       Please see the [explainer](https://github.com/WICG/priority-hints/blob/main/EXPLAINER.md) for more details and usage examples.
     </p>
 
-    <script>
-    window.location.replace("https://github.com/WICG/priority-hints/blob/main/EXPLAINER.md");
-    </script>
   </section>
 
 </body>
