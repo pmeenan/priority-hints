@@ -18,7 +18,9 @@ Default Highlight: js
 
 <script>
 (function() {
-  setTimeout(location.replace('https://github.com/WICG/priority-hints/blob/main/EXPLAINER.md'), 1000);
+  if (location.host == 'wicg.github.io') {
+    location.replace('https://github.com/WICG/priority-hints/blob/main/EXPLAINER.md');
+  }
 })();
 </script>
 
