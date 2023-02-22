@@ -19,7 +19,7 @@ Default Highlight: js
 <body>
   <section>
     <p>
-      This specification describes a browser API enabling developers to signal the priority of each resource they need to download.
+      Priority Hints exposes a mechanism for developers to signal a relative priority for browsers to consider when fetching resources. The relevant parts of the specification are now included in the core fetch and HTML specifications.
     </p>
   </section>
   <section id="sotd">
@@ -33,27 +33,12 @@ Default Highlight: js
     <p>
       <em>This section is non-normative.</em>
     </p>
-    <p>The browser's resource loading process is a complex one. Browsers discover needed resources and download them according
-      to their heuristic priority. Browsers might also use this heuristic resource priority to delay sending certain requests
-      in order to avoid bandwidth contention of these resources with more critical ones.</p>
+    <p>
+      This specification is no longer relevant and has been merged directly into the [[FETCH|Fetch]] and [[HTML|HTML]] specifications.
+      Please see the [explainer](https://github.com/WICG/priority-hints/blob/main/EXPLAINER.md) for more details and usage examples.
+    </p>
 
   </section>
-
-  <section>
-    <h2 id="solution">Solution</h2>
-  </section>
-
-  <section>
-    <h2 id="use-cases">Use Cases</h2>
-  </section>
-
-  <section data-dfn-for="safety">
-    <h2 id="safe-usage">Safe usage</h2>
-  </section>
-  <section>
-    <h2 id="security_privacy">Security and Privacy Considerations</h2>
-  </section>
-
 
 </body>
 
