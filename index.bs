@@ -1,97 +1,32 @@
 <pre class='metadata'>
-Title: Priority Hints
+Title: Priority Hints (obsolete)
 Shortname: PriorityHints
 Level: 1
 Status: CG-Draft
 Group: WICG
 URL: https://wicg.github.io/priority-hints
+Canonical URL: https://github.com/WICG/priority-hints/blob/main/EXPLAINER.md
 Editor: Patrick Meenan, Google Inc., patmeenan@gmail.com, https://twitter.com/patmeenan
 Editor: Addy Osmani, Google Inc., addyosmani@gmail.com, https://addyosmani.com/
 Former Editor: Yoav Weiss 58673, Google Inc., yoav@yoav.ws, https://blog.yoav.ws
 Abstract: Priority Hints exposes a mechanism for developers to signal a relative priority for browsers to consider when fetching resources.
+Abstract: The relevant parts of the specification are now included in the core fetch and HTML specifications.
+Warning: Obsolete
 Markup Shorthands: markdown yes
 Default Highlight: js
 </pre>
 
-<pre class=anchors>
-urlPrefix: https://html.spec.whatwg.org/multipage; spec: HTML;
-    type:dfn; for:/; text: enumerated attribute
-    type:dfn; for:/; text: invalid value default
-    type:dfn; for:/; text: missing value default
-urlPrefix: https://html.spec.whatwg.org/multipage/urls-and-fetching.html; spec: HTML;
-    type: dfn; url: #fetching-resources; text: Fetching resources;
-urlPrefix: https://html.spec.whatwg.org/multipage/images.html; spec: HTML;
-    type: dfn; url: #update-the-image-data; text: update the image data;
-    type: dfn; url: #reacting-to-environment-changes; text: Reacting to environment changes;
-urlPrefix: https://html.spec.whatwg.org/multipage/embedded-content.html; spec: HTML;
-    type: element; url: #the-img-element; text: img
-    type: dfn; url: #the-img-element; text: img element;
-urlPrefix: https://html.spec.whatwg.org/multipage/links.html; spec: HTML;
-    type: dfn; url: #external-resource-link; text: external resource links;
-    type: dfn; url: #link-type-modulepreload; text: modulepreload;
-urlPrefix: https://html.spec.whatwg.org/multipage/semantics.html; spec: HTML;
-    type: element; url: #the-link-element; text:link
-    type: dfn; url: #the-link-element; text: link element;
-    type: dfn; url: #create-a-link-request; text: create a link request;
-    type: dfn; url: #fetch-and-process-the-linked-resource; text: fetching and processing the linked resource;
-    type: dfn; url: #fetch-and-process-the-linked-resource; text: fetch and process the linked resource;
-    type: dfn; url: #fetching-and-processing-a-resource-from-a-link-element; text: Fetching and processing a resource from a link element;
-urlPrefix: https://html.spec.whatwg.org/multipage/scripting.html; spec: HTML;
-    type: element; text:script
-    type: dfn; url: #the-script-element; text: script element;
-    type: dfn; url: #the-script-element:data-block-2; text: data blocks;
-    type: dfn; url: #:~:text=dynamically%20has%20no%20direct%20effect; text: direct effect when changed dynamically;
-    type: dfn; url: #prepare-a-script; text: prepare a script;
-urlPrefix: https://html.spec.whatwg.org/multipage/webappapis.html; spec: HTML;
-    type: dfn; url: #script-fetch-options; text: Script fetch options;
-    type: dfn; url: #set-up-the-module-script-request; text: set up the module script request;
-    type: dfn; url: #default-classic-script-fetch-options; text: default classic script fetch options;
-    type: dfn; url: #set-up-the-classic-script-request; text: set up the classic script request;
-urlPrefix: https://html.spec.whatwg.org/multipage/indices.html; spec: HTML;
-    type: dfn; url: #elements-3; text: List of elements;
-urlPrefix: https://fetch.spec.whatwg.org; spec: FETCH;
-    type:dfn; url: #concept-request-destination; text:destination
-</pre>
-
 <body>
-  <section>
-    <p>
-      This specification describes a browser API enabling developers to signal the priority of each resource they need to download.
-    </p>
-  </section>
-  <section id="sotd">
-    <p>
-      This is an unofficial proposal.
-    </p>
-  </section>
-
   <section>
     <h2 id="introduction">Introduction</h2>
     <p>
-      <em>This section is non-normative.</em>
+      This specification is no longer relevant and has been merged directly into the [[FETCH|Fetch]] and [[HTML|HTML]] specifications.
+      Please see the [explainer](https://github.com/WICG/priority-hints/blob/main/EXPLAINER.md) for more details and usage examples.
     </p>
-    <p>The browser's resource loading process is a complex one. Browsers discover needed resources and download them according
-      to their heuristic priority. Browsers might also use this heuristic resource priority to delay sending certain requests
-      in order to avoid bandwidth contention of these resources with more critical ones.</p>
-
   </section>
-
-  <section>
-    <h2 id="solution">Solution</h2>
-  </section>
-
-  <section>
-    <h2 id="use-cases">Use Cases</h2>
-  </section>
-
-  <section data-dfn-for="safety">
-    <h2 id="safe-usage">Safe usage</h2>
-  </section>
-  <section>
-    <h2 id="security_privacy">Security and Privacy Considerations</h2>
-  </section>
-
-
+  <script>
+  window.location.replace("https://github.com/WICG/priority-hints/blob/main/EXPLAINER.md");
+  </script>
 </body>
 
 </html>
