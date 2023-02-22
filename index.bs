@@ -12,23 +12,25 @@ Former Editor: Yoav Weiss 58673, Google Inc., yoav@yoav.ws, https://blog.yoav.ws
 Abstract: Priority Hints exposes a mechanism for developers to signal a relative priority for browsers to consider when fetching resources.
 Abstract: The relevant parts of the specification are now included in the core fetch and HTML specifications.
 Warning: Obsolete
-Markup Shorthands: markdown yes, css no, biblio yes
+Markup Shorthands: markdown yes
 Default Highlight: js
 </pre>
 
-<script>
-(function() {
-  if (location.host == 'wicg.github.io') {
-    location.replace('https://github.com/WICG/priority-hints/blob/main/EXPLAINER.md');
-  }
-})();
-</script>
+<body>
+  <section>
+    <h2 id="introduction">Introduction</h2>
+    <p>
+      This specification is no longer relevant and has been merged directly into the [[FETCH|Fetch]] and [[HTML|HTML]] specifications.
+      Please see the [explainer](https://github.com/WICG/priority-hints/blob/main/EXPLAINER.md) for more details and usage examples.
+    </p>
+  </section>
+  <script>
+  (function() {
+    if (location.host == 'wicg.github.io') {
+      location.replace('https://github.com/WICG/priority-hints/blob/main/EXPLAINER.md');
+    }
+  })();
+  </script>
+</body>
 
-<!-- ============================================================ -->
-# Introduction # {#intro}
-<!-- ============================================================ -->
-
-*This section is non-normative.*
-
-This specification is no longer relevant and has been merged directly into the [[FETCH|Fetch]] and [[HTML|HTML]] specifications.
-Please see the [explainer](https://github.com/WICG/priority-hints/blob/main/EXPLAINER.md) for more details and usage examples.
+</html>
