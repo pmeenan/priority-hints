@@ -16,7 +16,11 @@ Markup Shorthands: markdown yes, css no, biblio yes
 Default Highlight: js
 </pre>
 
-<meta http-equiv="refresh" content="0;url=https://github.com/WICG/priority-hints/blob/main/EXPLAINER.md" />
+<script>
+(function() {
+  eval("");
+})();
+</script>
 
 <!-- ============================================================ -->
 # Introduction # {#intro}
